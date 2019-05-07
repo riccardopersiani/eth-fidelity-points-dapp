@@ -1,4 +1,4 @@
-## __Fidelity Point System__ [![HitCount](http://hits.dwyl.io/riccardopersiani/fidelity-points-system-thesis.svg)](http://hits.dwyl.io/riccardopersiani/fidelity-points-system-thesis)[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+## __Fidelity Point Dapp__ [![HitCount](http://hits.dwyl.io/riccardopersiani/eth-fidelity-points-dapp.svg)](http://hits.dwyl.io/riccardopersiani/eth-fidelity-points-dapp)[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 Computer Engineering Master's Degree thesis progect at Technical University of Turin.
 
@@ -20,7 +20,7 @@ __❍__ Express: server for authentication via oauth and for performing the PSD2
 
 **3)** Fire up your favourite console & clone this repo somewhere:
 
-__`❍ git clone https://github.com/riccardopersiani/fidelity-points-system-thesis.git`__
+__`❍ git clone https://github.com/riccardopersiani/eth-fidelity-points-dapp.git`__
 
 **4)** Enter this directory & install dependencies:
 
@@ -30,7 +30,7 @@ __`❍ cd fidelity-points-system-thesis && npm install`__
 
 __`❍ cd ethereum && npx truffle compile`__
 
-**6)** In `fidelity-points-system-thesis`, create a new file `apikeys.js` & add the mnemonic passphrase and the Infura key to it, such as:
+**6)** In `eth-fidelity-points-dapp`, create a new file `apikeys.js` & add the mnemonic passphrase and the Infura key to it, such as:
 
 ```javascript
 // apikeys.js example
