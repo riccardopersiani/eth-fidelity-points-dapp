@@ -1,0 +1,44 @@
+[
+  {
+    "id": "45355323453",
+    "label": null,
+    "bank_id": "psd201-bank-y--uk",
+    "_links": {
+      "self": {
+        "href": "https://psd2-api.openbankproject.com/obp/v2.0.0/my/accounts"
+      },
+      "detail": {
+        "href":
+          "https://psd2-api.openbankproject.com/obp/v2.0.0/my/banks/psd201-bank-y--uk/accounts/45355323453/account"
+      }
+    }
+  },
+  {
+    "id": "12456734234",
+    "label": null,
+    "bank_id": "psd201-bank-x--uk",
+    "_links": {
+      "self": {
+        "href": "https://psd2-api.openbankproject.com/obp/v2.0.0/my/accounts"
+      },
+      "detail": {
+        "href":
+          "https://psd2-api.openbankproject.com/obp/v2.0.0/my/banks/psd201-bank-x--uk/accounts/12456734234/account"
+      }
+    }
+  },
+  {
+    "id": "123412341234",
+    "label": null,
+    "bank_id": "psd201-bank-x--uk",
+    "_links": {
+      "self": {
+        "href": "https://psd2-api.openbankproject.com/obp/v2.0.0/my/accounts"
+      },
+      "detail": {
+        "href":
+          "https://psd2-api.openbankproject.com/obp/v2.0.0/my/banks/psd201-bank-x--uk/accounts/123412341234/account"
+      }
+    }
+  }
+]

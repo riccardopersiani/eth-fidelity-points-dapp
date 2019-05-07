@@ -1,0 +1,57 @@
+extends ../graphic/layout
+
+block content
+    main(role='main')
+        // Main jumbotron for a primary marketing message or call to action
+        .jumbotron
+            .container
+                h2 Form:
+
+                form(name="transaction-request", method="post")
+                    div.input
+                        span.label To Bank Id
+                        input(type="text", name="to_bank_id", value=toBankId, class='required', readonly)
+                    div.input
+                        span.label To Account Id
+                        input(type="text", name="to_account_id", value=toAccountId, class='required', readonly)
+                    div.input
+                        span.label Amount
+                        input(type="text", name="amount", value=euroAmount, class='required', readonly)
+                    div.input
+                        span.label Description
+                        input(type="text", name="description" value= 'tokens = '+tokenAmount+' FIDO', class='required')
+                    div.input
+                        span.label Pid
+                        input(type="text", name="pid", value=pid, class='required', readonly)
+                    div.actions
+                        input(type="submit", value="Submit")
+
+        if data
+            .container
+                h2 Info:
+                .card-deck
+                    .card(style='width: 18rem;')
+                        .card-header
+                            h5.card-title Error and Details
+                        .card-body
+                            p Error: #{error}
+                            p Details: #{details}
+                        .card-footer
+                            small.text-muted
+                    .card(style='width: 18rem;')
+                        .card-header
+                            h5.card-title Post Url
+                        .card-body
+                            p #{postUrl}
+                        .card-footer
+                            small.text-muted
+                    .card(style='width: 18rem;')
+                        .card-header
+                            h5.card-title Data
+                        .card-body
+                            p #{data}
+                        .card-footer
+                            small.text-muted
+
+
+

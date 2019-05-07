@@ -1,0 +1,7 @@
+{
+    "apiHost": "https://psd2-api.openbankproject.com",
+    "consumerKey": "zyhdtbhlpnd31ltulwez4siivhfej0vxxs0hfte4",
+    "consumerSecret": "yal2uuyy25uj2zzwydrdzxuxm13znlguxidy2kir",
+    "redirectUrl": "http://localhost:8085/callback",
+    "endpoint": "https://psd2-api.openbankproject.com/oauth/initiate"
+}
