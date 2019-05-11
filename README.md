@@ -1,6 +1,6 @@
 ## __Fidelity Point Dapp__ [![HitCount](http://hits.dwyl.io/riccardopersiani/eth-fidelity-points-dapp.svg)](http://hits.dwyl.io/riccardopersiani/eth-fidelity-points-dapp)[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-Computer Engineering Master's Degree thesis progect at Technical University of Turin.
+Computer Engineering Master's Degree thesis project at Technical University of Turin.
 
 The purpose of this project is to show a complete Ethereum DApp.
 
@@ -8,9 +8,9 @@ The purpose of this project is to show a complete Ethereum DApp.
 
 These are 2 main components:
 
-__❍__ Next: server connected to the blockchain.
+__❍__ Next: server connected to the Ethereum blockchain.
 
-__❍__ Express: server for authentication via oauth and for performing the PSD2 payment.
+__❍__ Express: server for authentication via OAuth and for performing the PSD2 payment.
 
 ### :page_with_curl: __Instructions__:
 
@@ -24,13 +24,9 @@ __`❍ git clone https://github.com/riccardopersiani/eth-fidelity-points-dapp.gi
 
 **4)** Enter this directory & install dependencies:
 
-__`❍ cd fidelity-points-system-thesis && npm install`__
+__`❍ cd eth-fidelity-points-dapp && npm install`__
 
-**5)** Go in `ethereum` folder & compile the code:
-
-__`❍ cd ethereum && npx truffle compile`__
-
-**6)** In `eth-fidelity-points-dapp`, create a new file `apikeys.js` & add the mnemonic passphrase and the Infura key to it, such as:
+**5)** In `eth-fidelity-points-dapp`, create a new file `apikeys.js` & add the mnemonic passphrase and the Infura key to it, such as:
 
 ```javascript
 // apikeys.js example
@@ -41,9 +37,17 @@ module.exports = {
 }
 ```
 
+**6)** Go in `ethereum` folder & launch Truffle:
+
+__`❍ cd ethereum && npx truffle develop`__
+
+**7)** In the console with Truffle running set the tests going!:
+
+__`❍ truffle(develop)> test`__
+
 **7)** Deploy the contracts with Truffle on a testnet, such as Kovan:
 
-__`❍ npx truffle  deploy --network kovan`__
+__`❍ npx truffle deploy --network kovan`__
 
 **8)** In the main folder start the Next server:
 
@@ -55,10 +59,10 @@ __`❍ cd psd2 && node oauth.js`__
 
 ### :black_nib: Notes
 
-__❍__ Note that your own Infura key and the Metamask passphrase must be kept secure. The ones provided here are simply placeholders.
+__❍__ Please, keep secure your own Infura key and the Metamask passphrase. The ones that may be provided here are simply placeholders.
 
-__❍__ The frontend application for the loyalty point system is reachable at https://localhost:3000/
+__❍__ The front-end application for the loyalty point system is reachable at https://localhost:3000/
 
-__❍__ The frontend application for the PSD2 payment is reachable at https://localhost:8085/
+__❍__ The front-end application for the PSD2 payment is reachable at https://localhost:8085/
 
 __*Happy developing!*__
