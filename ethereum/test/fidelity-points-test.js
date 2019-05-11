@@ -114,17 +114,58 @@ contract('❍  Fidelity Points Tests', async accounts => {
     }
   })
 
-  it('getSummary', async () => {
-      const summary = await contract.getSummary();
-      console.log("summary[0]: " + summary[0]);
-      console.log("summary[1]: " + summary[1]);
-      console.log("summary[2]: " + summary[2]);
-      console.log("summary[3]: " + summary[3]);
-      console.log("summary[4]: " + summary[4]);
-      assert.strictEqual(
-        summary[2],
-        tokenSymbol,
-        'Token symbol was not set correctly in the summary'
-      )
+  it('checks summary token total supply', async () => {
+    const summary = await contract.getSummary()
+    const totalSupply = await contract.totalSupply.call()
+    assert.strictEqual(
+      parseInt(summary[0]),
+      totalSupply,
+      'Token total supply was not set correctly in the summary'
+    )
+  })
+
+  it('checks summary contract owner', async () => {
+    const summary = await contract.getSummary()
+    assert.strictEqual(
+      summary[1],
+      deployerAddress,
+      'Contract owner was not set correctly in the summary'
+    )
+  })
+
+  it('checks summary token symbol', async () => {
+    const summary = await contract.getSummary()
+    assert.strictEqual(
+      summary[2],
+      tokenSymbol,
+      'Token symbol was not set correctly in the summary'
+    )
+  })
+
+  it('checks summary token name', async () => {
+    const summary = await contract.getSummary()
+    assert.strictEqual(
+      summary[3],
+      tokenName,
+      'Token name was not set correctly in the summary'
+    )
+  })
+
+  it('checks summary token decimals', async () => {
+    const summary = await contract.getSummary()
+    assert.strictEqual(
+      parseInt(summary[4]),
+      tokenDecimals,
+      'Token decimals was not set correctly in the summary'
+    )
+  })
+
+  it('checks summary token rate', async () => {
+    const summary = await contract.getSummary()
+    assert.strictEqual(
+      parseInt(summary[5]),
+      tokenRate,
+      'Token rate was not set correctly in the summary'
+    )
   })
 })
