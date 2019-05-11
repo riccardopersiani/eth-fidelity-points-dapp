@@ -4,6 +4,7 @@ const {
 
 const web3 = require('../web3');
 const fidelityPoints = artifacts.require('./FidelityPoints.sol')
+const BigNumber = require('bignumber.js');
 
 contract('❍  Fidelity Points Tests', async accounts => {
 
@@ -88,7 +89,7 @@ contract('❍  Fidelity Points Tests', async accounts => {
     assert(parseFloat(balanceFinal) > parseFloat(balanceStart))
   })
 
-  it('checks totalSupply increment with token creation', async () => {
+  it('checks total supply increment with token creation', async () => {
     const totalSupplyStart = await contract.totalSupply.call();
     await contract.createTokens({
       from: deployerAddress,
@@ -105,7 +106,7 @@ contract('❍  Fidelity Points Tests', async accounts => {
           from: accounts[1],
           value: '20'
       })
-      assert.fail('Create tokens should not have succeded!')
+      assert.fail('Create tokens should not have succeeded!')
     } catch (e) {
       assert.isTrue(
         e.message.startsWith(`${expectedError}`),
@@ -117,9 +118,11 @@ contract('❍  Fidelity Points Tests', async accounts => {
   it('checks summary token total supply', async () => {
     const summary = await contract.getSummary()
     const totalSupply = await contract.totalSupply.call()
+    console.log(summary[0])
+    console.log(totalSupply)
     assert.strictEqual(
-      parseInt(summary[0]),
-      totalSupply,
+      summary[0].toString(),
+      totalSupply.toString(),
       'Token total supply was not set correctly in the summary'
     )
   })
@@ -166,6 +169,16 @@ contract('❍  Fidelity Points Tests', async accounts => {
       parseInt(summary[5]),
       tokenRate,
       'Token rate was not set correctly in the summary'
+    )
+  })
+
+  it('checks contract deployer owning all the tokes', async () => {
+    const ownerBalance = await contract.balanceOf(deployerAddress)
+    const totalSupply = await contract.totalSupply.call()
+    assert.strictEqual(
+      ownerBalance.toString(),
+      totalSupply.toString(),
+      'Total supply is not owned completely by the deployer'
     )
   })
 })
