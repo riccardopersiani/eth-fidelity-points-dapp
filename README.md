@@ -12,6 +12,8 @@ __❍__ Next: server connected to the Ethereum blockchain.
 
 __❍__ Express: server for authentication via OAuth and for performing the PSD2 payment.
 
+__ __ Firebase: database for managing the web client authentication.
+
 ### :page_with_curl: __Instructions__:
 
 **1)** Go on the Infura website to get an Infura key: [infura.io](https://infura.io).
@@ -60,6 +62,8 @@ __`❍ cd psd2 && node oauth.js`__
 ### :black_nib: Notes
 
 __❍__ Please, keep secure your own Infura key and the Metamask passphrase. The ones that may be provided here are simply placeholders.
+
+__❍__ Please, keep secure your own Firebase configuration. The one that may be provided here is simply for demonstration.
 
 __❍__ The front-end application for the loyalty point system is reachable at https://localhost:3000/
 
