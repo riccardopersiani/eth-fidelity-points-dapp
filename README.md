@@ -65,8 +65,8 @@ __❍__ Please, keep secure your own Infura key and the Metamask passphrase. The
 
 __❍__ Please, keep secure your own Firebase configuration. The one that may be provided here is simply for demonstration.
 
-__❍__ The front-end application for the loyalty point system is reachable at https://localhost:3000/
+__❍__ The front-end application for the loyalty point system is reachable at http://localhost:3000/
 
-__❍__ The front-end application for the PSD2 payment is reachable at https://localhost:8085/
+__❍__ The front-end application for the PSD2 payment is reachable at http://localhost:8085/
 
 __*Happy developing!*__
