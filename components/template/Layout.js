@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Container } from "semantic-ui-react";
-import HeaderTop from "./Header";
-import Footer from "./Footer";
+import React, { Component } from "react"
+import { Container } from "semantic-ui-react"
+import HeaderTop from "./Header"
+import Footer from "./Footer"
 
 class Layout extends Component {
   render() {
@@ -13,7 +13,7 @@ class Layout extends Component {
         </Container>
         <Footer />
       </div>
-    );
+    )
   }
 }
-export default Layout;
+export default Layout
