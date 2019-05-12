@@ -1,20 +1,18 @@
 doctype html
-html(lang='')
-    head
-        meta(charset='utf-8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title #{title} - PSD2 Payment
-        meta(name='description', content='')
-        meta(name='theme-color' content='#4DA5F4')
-        meta(name='csrf-token', content=_csrf)
-        link(rel='shortcut icon', href='/images/favicon.png')
-        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
-        style
-            // Custom styles for this template
-            include ../css/style.css
-
-    body
-        include ./navbar
-        block content
-        include ./footer
+html(lang='eng')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='author', content='Riccardo Persiani')
+    meta(name='description', content='eth-fidelity-points-dapp psd2 frontend')
+    meta(name='theme-color' content='#4DA5F4')
+    meta(name='csrf-token', content=_csrf)
+    link(rel='shortcut icon', href='/images/favicon.png')
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+    style
+      include ../css/style.css
+    title #{title} - PSD2 Payment
+  body
+    include ./navbar
+    block content

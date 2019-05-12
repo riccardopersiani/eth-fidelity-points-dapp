@@ -2,7 +2,6 @@ extends ../graphic/layout
 
 block content
   main(role='main')
-    // Main jumbotron for the primary marketing message
     .jumbotron
       .container
         h1.display-3 PSD2 Payment Home
@@ -11,31 +10,28 @@ block content
         p
           a.btn.btn-primary.btn-lg(href='https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en', role='button') Learn more »
     .container
-      // Row of columns
       .row
         .col-md-4
           h2 Admin Only
           p
-            | The admin of the internet service provider is the only one who have the function to perform Psd2 payment to the shops of the loyalty program.
+            | The admin of the internet service provider is the only one who have the function to
+            | perform PSD2 payment to the shops of the loyalty program.
             | The admin can select the functions in the superior navbar.
-            | Expecially, "transaction" will redirect him to the page used to perform a payment to a shop, following his request to be payed.
+            | Especially, "transaction" will redirect him to the page used to perform a payment to a shop, following his request to be payed.
           p
-            a.btn.btn-secondary(href='#', role='button') View details »
         .col-md-4
           h2 Euro Countries
           p
-            | Psd2 gives to the admin of the application the possibility to perform payments in euro in every country in the EU.
+            | PSD2 gives to the admin of the application the possibility to perform payments in euro in every country in the EU.
             | Implementing measures for Directive (EU) 2015/2366 on payment services
             | EU countries had to transpose Directive (EU) 2015/2366 into national law by 13 January 2018. Some Member States have not yet communicated their transpositions measures.
           p
-            a.btn.btn-secondary(href='#', role='button') View details »
         .col-md-4
           h2 No Intermediaries
           p
             | When we buy something online we typically enter our payment details into the merchants website, and the merchant then gets the money from your bank account by way of a few intermediaries
             | With PSD2, the Directive will allow retailers to ‘ask’ consumers for permission to use your bank details. Once you give permission, the retailer will receive the payment directly from your bank – no intermediaries
           p
-            a.btn.btn-secondary(href='#', role='button') View details »
 
   // Footer
   include ../graphic/footer.pug
