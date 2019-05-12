@@ -1,21 +1,25 @@
 {
-  "name": "@riccardopersiani/fidelity-points-system-thesis",
+  "name": "@riccardopersiani/eth-fidelity-points-dapp",
   "version": "2.0.1",
   "description": "loyalty program blockchain-based app",
+  "main": "README.md",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riccardopersiani/eth-fidelity-points-dapp"
+  },
   "bugs": {
-    "url": "https://github.com/riccardopersiani/fidelity-points-system-thesis/issues",
+    "url": "https://github.com/riccardopersiani/eth-fidelity-points-dapp/issues",
     "email": "r.persiani92@gmail.com"
   },
+  "homepage": "https://github.com/n/a#readme",
   "license": "MIT",
-  "private": true,
   "author": {
     "name": "Riccardo Persiani",
     "email": "r.persiani92@gmail.com",
     "url": "http://riccardopersiani.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/riccardopersiani/fidelity-points-system-thesis"
   },
   "engines": {
     "node": "8.9.4",
@@ -68,9 +72,6 @@
     "truffle-hdwallet-provider": "^1.0.9",
     "web3": "^1.0.0-beta.26",
     "zeppelin": "0.0.3"
-  },
-  "directories": {
-    "test": "test"
   },
   "devDependencies": {
     "standard-version": "^6.0.1",
